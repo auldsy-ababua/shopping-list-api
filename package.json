@@ -1,0 +1,28 @@
+{
+  "name": "shopping-list-api",
+  "version": "1.0.0",
+  "description": "a backend for a shopping list api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auldsy-ababua/shopping-list-api.git"
+  },
+  "keywords": [
+    "shopping",
+    "list",
+    "api"
+  ],
+  "author": "Colin Aulds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/auldsy-ababua/shopping-list-api/issues"
+  },
+  "homepage": "https://github.com/auldsy-ababua/shopping-list-api#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
