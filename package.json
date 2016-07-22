@@ -1,10 +1,11 @@
 {
-  "name": "shopping-list-api",
+  "name": "snippets",
   "version": "1.0.0",
   "description": "a backend for a shopping list api",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^3.0.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }
