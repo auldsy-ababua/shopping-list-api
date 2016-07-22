@@ -31,8 +31,10 @@ Storage.prototype.remove = function(id) {
         var element = this.items[index];
         if (id == element.id) {
             this.items.splice(index, 1);
+            return true;
         }
     }
+    return false;
 };
 
 /**
@@ -105,8 +107,12 @@ app.delete('/items/:id', function(req, res) {
         return res.sendStatus(404);
     }
 
-    storage.remove(req.params.id);
-    res.sendStatus(204);
+    var isRemoved = storage.remove(req.params.id);
+    if (isRemoved) {
+      return res.sendStatus(204);
+    } else {
+      return res.sendStatus(404);
+    }
 });
 
 
