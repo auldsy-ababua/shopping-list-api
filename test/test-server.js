@@ -92,7 +92,7 @@ describe('Shopping List', function() {
         chai.request(app)
             .delete('/items/0')
             .end(function(err, res) {
-              should.equal(err, null);
+              should.equal(err, null); 
               res.should.have.status(204);
               storage.items.should.be.a('array');
               storage.items.should.have.length(3);
@@ -109,6 +109,7 @@ describe('Shopping List', function() {
         chai.request(app)
             .delete('/items/10')
             .end(function(err, res) {
+              should.not.equal(err, null);
               res.should.have.status(404);
               done();
             });
